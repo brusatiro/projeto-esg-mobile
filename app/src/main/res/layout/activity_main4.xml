@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeEscuroLetra"
+    android:backgroundTint="@color/verdeEscuroLetra">
+
+    <LinearLayout
+        android:id="@+id/barraOpcoesIcons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="-20dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnInicioIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_iconacoesbranco" />
+
+
+        <ImageButton
+            android:id="@+id/btnPremiosIcon"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_iconpremios" />
+
+        <ImageButton
+            android:id="@+id/btnPontuacaoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintEnd_toEndOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintVertical_bias="0.779"
+            app:srcCompat="@drawable/ic_iconpontos" />
+
+        <ImageButton
+            android:id="@+id/btnDicasIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintEnd_toEndOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_icondicasverde" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barraOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingLeft="10dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/btnInicio"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnBonificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="6dp"
+            android:text="@string/btnBonificacao"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnPontuacao"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/btnPontuacao"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnDicas"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btnDicas"
+            android:textColor="@color/verdeClaro"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconLogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_logo_app_foreground" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_iconbtnuser" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/backgroundprincipal"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:id="@+id/textEcopontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/ecopontos"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iconReciclagem"
+            app:layout_constraintStart_toEndOf="@+id/iconReciclagem"
+            app:layout_constraintTop_toTopOf="@+id/iconReciclagem" />
+
+        <Button
+            android:id="@+id/btnMapaEcopontos"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/verdeEscuroLetra"
+            android:text="@string/btnExplorar"
+            android:textSize="11sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textEcopontos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textEcopontos" />
+
+        <ImageButton
+            android:id="@+id/iconReciclagem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/transparente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_iconrecycle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:text="@string/dicas_intro"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/iconLogo"
+        app:layout_constraintTop_toBottomOf="@+id/iconLogo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgroundprincipal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageView
+            android:id="@+id/iconHorta2"
+            android:layout_width="50dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_iconplant" />
+
+
+        <TextView
+            android:id="@+id/textCultivo"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/cultivo"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iconHorta2"
+            app:layout_constraintStart_toEndOf="@+id/iconHorta2"
+            app:layout_constraintTop_toTopOf="@+id/iconHorta2" />
+
+        <Button
+            android:id="@+id/btnDicasCultivo"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/verdeEscuroLetra"
+            android:text="@string/btnExplorar"
+            android:textSize="11sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textCultivo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textCultivo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgroundprincipal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/textOngs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/ongs"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
+            app:layout_constraintStart_toEndOf="@+id/imageButton10"
+            app:layout_constraintTop_toTopOf="@+id/imageButton10" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/verdeEscuroLetra"
+            android:text="@string/btnExplorar"
+            android:textSize="11sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textOngs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textOngs" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/transparente"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_coracaovermelho" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgroundprincipal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <TextView
+            android:id="@+id/textOng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/receitas"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/verdeEscuroLetra"
+            android:text="@string/btnExplorar"
+            android:textSize="11sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textOng"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textOng" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_iconsalad" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backgroundprincipal"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout6"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <TextView
+            android:id="@+id/textGympass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:text="@string/parceriaGympass"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+            app:layout_constraintStart_toEndOf="@+id/imageView28"
+            app:layout_constraintTop_toTopOf="@+id/imageView28" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/verdeEscuroLetra"
+            android:text="@string/btnExplorar"
+            android:textSize="11sp"
+            app:cornerRadius="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGympass"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textGympass" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logogympass" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

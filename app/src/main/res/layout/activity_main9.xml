@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeEscuroLetra"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/iconLogo3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_logo_app_foreground"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:id="@+id/barraOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingLeft="10dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/btnInicio"
+            android:textColor="@color/verdeClaro"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnBonificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="6dp"
+            android:text="@string/btnBonificacao"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnPontuacao"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/btnPontuacao"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnDicas"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btnDicas"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/iconPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iconLogo3"
+        app:srcCompat="@drawable/ic_iconbtnuser"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+        android:contentDescription="@string/todo11" />
+
+    <LinearLayout
+        android:id="@+id/barraOpcoesIcons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-20dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageButton
+            android:id="@+id/btnInicioIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_iconacoesverde"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+            android:contentDescription="@string/todo10" />
+
+
+        <ImageButton
+            android:id="@+id/btnPremiosIcon"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_iconpremios"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+            android:contentDescription="@string/todo9" />
+
+        <ImageButton
+            android:id="@+id/btnPontuacaoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintEnd_toEndOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintVertical_bias="0.779"
+            app:srcCompat="@drawable/ic_iconpontos"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            android:contentDescription="@string/todo8" />
+
+        <ImageButton
+            android:id="@+id/btnDicasIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            android:contentDescription="@string/todo7"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintEnd_toEndOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_icondicas"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/backgroundprincipal"
+        app:layout_constraintBottom_toTopOf="@+id/barraOpcoesIcons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78">
+
+        <TextView
+            android:id="@+id/textH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/parabens"
+            android:textAlignment="center"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/top3"
+            android:textAlignment="center"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textH1"
+            app:layout_constraintStart_toStartOf="@+id/textH1"
+            app:layout_constraintTop_toBottomOf="@+id/textH1" />
+
+        <TextView
+            android:id="@+id/textH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/nomePremios"
+            android:textAlignment="center"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textH2"
+            app:layout_constraintStart_toStartOf="@+id/textH2"
+            app:layout_constraintTop_toBottomOf="@+id/textH2" />
+
+        <TextView
+            android:id="@+id/textH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/opcoesPremios"
+            android:textAlignment="center"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView21"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="@+id/imageView21"
+            app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+        <TextView
+            android:id="@+id/textH6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/redesSociais"
+            android:textAlignment="center"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="@+id/button13"
+            app:layout_constraintStart_toStartOf="@+id/button13"
+            app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+        <TextView
+            android:id="@+id/textH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/pontosPremios"
+            android:textAlignment="center"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textH3"
+            app:layout_constraintStart_toStartOf="@+id/textH3"
+            app:layout_constraintTop_toBottomOf="@+id/textH3" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/todo3"
+            app:layout_constraintEnd_toEndOf="@+id/textH4"
+            app:layout_constraintStart_toStartOf="@+id/textH4"
+            app:layout_constraintTop_toBottomOf="@+id/textH4"
+            app:srcCompat="@drawable/iconmedalha"
+            tools:ignore="ImageContrastCheck,ImageContrastCheck,ImageContrastCheck" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#73EF8D"
+            android:paddingStart="70dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/premio1"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/textH5"
+            app:layout_constraintStart_toStartOf="@+id/textH5"
+            app:layout_constraintTop_toBottomOf="@+id/textH5" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#73EF8D"
+            android:paddingStart="75dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/premio2"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#73EF8D"
+            android:paddingStart="65dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="12dp"
+            android:text="@string/premio3"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/verdeEscuroLetra"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/button12"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button12"
+            app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/todo6"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintTop_toTopOf="@+id/button"
+            app:srcCompat="@drawable/logogympass"
+            tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/todo5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textH6"
+            app:layout_constraintStart_toStartOf="@+id/textH6"
+            app:layout_constraintTop_toBottomOf="@+id/textH6"
+            app:srcCompat="@drawable/redessociais" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="12dp"
+            android:contentDescription="@string/tod4"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button12"
+            app:layout_constraintStart_toStartOf="@+id/button12"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:srcCompat="@drawable/logovr" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/todo2"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/button13"
+            app:layout_constraintStart_toStartOf="@+id/button13"
+            app:layout_constraintTop_toBottomOf="@+id/button12"
+            app:srcCompat="@drawable/logolivup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/titlePremios"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconLogo3"
+        app:layout_constraintVertical_bias="0.472" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

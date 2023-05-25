@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/verdeEscuroLetra"
+    android:paddingTop="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/iconLogo3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_logo_app_foreground"
+        android:contentDescription="@string/todo" />
+
+
+    <ImageButton
+        android:id="@+id/iconPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iconLogo3"
+        app:srcCompat="@drawable/ic_iconbtnuser"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+        android:contentDescription="@string/todo11" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ecopontosMap"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconLogo3"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/backgroundprincipal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:context=".MapsActivity">
+
+        <fragment
+            android:id="@+id/map_fragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cornerRadius="10dp"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/barraOpcoesIcons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-10dp"
+        android:orientation="horizontal"
+        android:paddingTop="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <ImageButton
+            android:id="@+id/btnInicioIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_iconacoesbranco"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+            android:contentDescription="@string/todo10" />
+
+
+        <ImageButton
+            android:id="@+id/btnPremiosIcon"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_iconpremios"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"
+            android:contentDescription="@string/todo9" />
+
+        <ImageButton
+            android:id="@+id/btnPontuacaoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintEnd_toEndOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintVertical_bias="0.779"
+            app:srcCompat="@drawable/ic_iconpontos"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+            android:contentDescription="@string/todo8" />
+
+        <ImageButton
+            android:id="@+id/btnDicasIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/transparente"
+            android:contentDescription="@string/todo7"
+            app:layout_constraintBottom_toTopOf="@+id/barraOpcoes"
+            app:layout_constraintEnd_toEndOf="@+id/barraOpcoes"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="@+id/barraOpcoes"
+            app:srcCompat="@drawable/ic_icondicasverde"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barraOpcoes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingLeft="10dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/btnInicio"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnBonificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="6dp"
+            android:text="@string/btnBonificacao"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnPontuacao"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingLeft="5dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/btnPontuacao"
+            android:textSize="9sp" />
+
+        <Button
+            android:id="@+id/btnDicas"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparente"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/btnDicas"
+            android:textColor="@color/verdeClaro"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
